@@ -19,12 +19,66 @@ color:#333;
 }
 
 header{
-background:#0d6efd;
-color:white;
-padding:20px 40px;
+background:rgba(255,255,255,0.95);
+padding:18px 60px;
+box-shadow:0 3px 15px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand{
 display:flex;
 align-items:center;
-justify-content:space-between;
+gap:15px;
+}
+
+.logo{
+width:65px;
+height:65px;
+border-radius:50%;
+}
+
+.brand h1{
+color:#667A42;
+font-size:30px;
+margin:0;
+}
+
+.brand p{
+color:#888;
+font-size:14px;
+margin-top:4px;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:28px;
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#667A42;
+}
+
+.enquire-btn{
+background:#667A42;
+color:white !important;
+padding:12px 24px;
+border-radius:30px;
 }
 
 .logo{
@@ -32,11 +86,7 @@ display:flex;
 align-items:center;
 }
 
-.logo img{
-height:60px;
-margin-right:15px;
-border-radius:10px;
-}
+
 
 nav a{
 color:white;
@@ -99,6 +149,23 @@ text-align:center;
 padding:20px;
 margin-top:50px;
 }
+  .enquire-btn{
+background:#667A42;
+color:white !important;
+padding:12px 24px;
+border-radius:30px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.enquire-btn:hover{
+background:#556735;
+transform:translateY(-2px);
+}
+
+body{
+background:#FAF9F5;
+}
 </style>
 
 </head>
@@ -107,20 +174,41 @@ margin-top:50px;
 
 <header>
 
-<div class="logo">
-<img src="Logo.png.jpeg">
+<div class="navbar">
+
+<div class="brand">
+
+<img src="Logo.png.jpeg" class="logo">
+
 <div>
-<h2>LOGICS'A</h2>
+
+<h1>LOGICS'A</h1>
+
 <p>Learn • Grow • Succeed</p>
+
 </div>
+
 </div>
 
 <nav>
+
 <a href="#">Home</a>
+
+<a href="#">About Us</a>
+
 <a href="#">Courses</a>
+
 <a href="#">Services</a>
-<a href="#">Contact</a>
+
+<a href="#">Why Us</a>
+
+<a href="#">Contact Us</a>
+
+<a href="#" class="enquire-btn">Enquire Now</a>
+
 </nav>
+
+</div>
 
 </header>
 
