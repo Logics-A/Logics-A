@@ -192,9 +192,10 @@ HERO
 
 .left-leaf{
     position:absolute;
-    left:0;
-    top:120px;
-    width:180px;
+    left:-130px;     /* Move it outside the page */
+    top:170px;
+    width:320px;
+    z-index:1;
 }
 
 .right-leaf{
