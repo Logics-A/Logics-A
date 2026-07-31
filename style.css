@@ -39,19 +39,21 @@ HEADER
 
 header{
     width:100%;
-    background:#dfe8d6;
-    padding:20px 0;
+    background:#ffffff;
+    padding:18px 0;
     position:sticky;
     top:0;
     z-index:999;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
 }
 
 header .container{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    max-width:1400px;
+    margin:auto;
 }
-
 .logo{
     width:90px;
     height:90px;
