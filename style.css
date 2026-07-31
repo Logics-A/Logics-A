@@ -210,3 +210,155 @@ HERO
     bottom:50px;
     width:70px;
 }
+/* ===========================
+QUOTE BOX
+=========================== */
+
+.quote-box{
+    width:500px;
+    max-width:90%;
+    background:#ffffff;
+    margin:60px auto 0;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    position:relative;
+}
+
+.quote-box i.fa-quote-left{
+    font-size:28px;
+    color:#6b8b57;
+    margin-bottom:15px;
+}
+
+.quote-box h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    color:#355336;
+    line-height:1.5;
+}
+
+.heart{
+    margin-top:20px;
+    color:#7d9a68;
+    font-size:22px;
+}
+
+/* ===========================
+FEATURES
+=========================== */
+
+.features{
+    width:90%;
+    max-width:1300px;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:35px 25px;
+    border-radius:22px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 10px 20px rgba(0,0,0,.05);
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    background:#dfe8d6;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 20px;
+}
+
+.icon i{
+    color:#476646;
+    font-size:28px;
+}
+
+.feature h3{
+    font-family:'Cormorant Garamond',serif;
+    color:#355336;
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.feature p{
+    color:#6c7168;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.hero-left h1{
+    font-size:65px;
+}
+
+.buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.features{
+    grid-template-columns:repeat(2,1fr);
+}
+
+nav{
+    display:none;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-left h1{
+    font-size:50px;
+}
+
+.hero-left h2{
+    font-size:36px;
+}
+
+.features{
+    grid-template-columns:1fr;
+}
+
+.quote-box h3{
+    font-size:24px;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+.enquire-btn{
+    display:none;
+}
+
+}
