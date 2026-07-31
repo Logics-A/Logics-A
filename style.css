@@ -66,15 +66,18 @@ header .container{
     gap:15px;
 }
 
-.logo h1{
+.logo-text h1{
     font-family:'Cormorant Garamond',serif;
-    font-size:36px;
+    font-size:42px;
     color:#2e5334;
+    margin:0;
+    line-height:1;
 }
 
-.logo p{
-    font-size:12px;
+.logo-text p{
+    font-size:14px;
     color:#6f7468;
+    margin-top:5px;
 }
 
 nav ul{
