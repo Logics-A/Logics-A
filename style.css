@@ -63,9 +63,14 @@ header .container{
 .logo-container{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:20px;
 }
 
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
 .logo-text h1{
     font-family:'Cormorant Garamond',serif;
     font-size:42px;
