@@ -1,286 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGICS'A</title>
 
-<title>LOGICS'A</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-
-font-family:Poppins,sans-serif;
-
-background:
-linear-gradient(rgba(252,250,242,.95),rgba(252,250,242,.95)),
-url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-
-background-color:#F8F7F0;
-
-color:#2d2d2d;
-
-overflow-x:hidden;
-
-}
-
-nav{
-
-height:100px;
-
-background:white;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:0 70px;
-
-box-shadow:0 3px 15px rgba(0,0,0,.08);
-
-position:sticky;
-
-top:0;
-
-z-index:999;
-
-}
-
-.logo{
-
-display:flex;
-
-align-items:center;
-
-gap:20px;
-
-}
-
-.logo img{
-
-height:80px;
-
-width:80px;
-
-border-radius:50%;
-
-}
-
-.logo h1{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:56px;
-
-color:#556B2F;
-
-font-weight:700;
-
-line-height:45px;
-
-}
-
-.logo p{
-
-color:#6d6d6d;
-
-margin-top:8px;
-
-font-size:20px;
-
-}
-
-.menu{
-
-display:flex;
-
-gap:45px;
-
-list-style:none;
-
-}
-
-.menu a{
-
-text-decoration:none;
-
-font-weight:500;
-
-color:#222;
-
-font-size:18px;
-
-transition:.3s;
-
-}
-
-.menu a:hover{
-
-color:#667A42;
-
-}
-
-.enquire{
-
-background:#667A42;
-
-padding:14px 30px;
-
-border-radius:12px;
-
-color:white;
-
-text-decoration:none;
-
-font-weight:600;
-
-}
-
-.hero{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:80px;
-
-min-height:720px;
-
-position:relative;
-
-}
-
-.left{
-
-width:55%;
-
-}
-
-.small{
-
-letter-spacing:2px;
-
-font-size:18px;
-
-color:#556B2F;
-
-margin-bottom:25px;
-
-}
-
-.left h2{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:90px;
-
-line-height:95px;
-
-font-weight:700;
-
-}
-
-.left h2 span{
-
-color:#667A42;
-
-}
-
-.subtitle{
-
-font-size:26px;
-
-margin:35px 0;
-
-}
-
-.buttons{
-
-display:flex;
-
-gap:20px;
-
-margin-top:35px;
-
-}
-
-.green{
-
-background:#667A42;
-
-color:white;
-
-padding:18px 35px;
-
-border-radius:12px;
-
-text-decoration:none;
-
-font-weight:600;
-
-}
-
-.white{
-
-border:2px solid #667A42;
-
-padding:18px 35px;
-
-border-radius:12px;
-
-text-decoration:none;
-
-color:#667A42;
-
-font-weight:600;
-
-background:white;
-
-}
-
-.right{
-
-width:40%;
-
-display:flex;
-
-justify-content:center;
-
-}
-
-.right img{
-
-width:470px;
-
-}
-
-</style>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
+<!-- ==========================
+HEADER
+=========================== -->
+
+<header>
+
+<div class="container">
 
 <div class="logo">
 
-<img src="Logo.png.jpeg">
+<img src="images/logo.png" alt="Logo">
 
-<div>
+<div class="logo-text">
 
 <h1>LOGICS'A</h1>
 
@@ -290,9 +41,12 @@ width:470px;
 
 </div>
 
-<ul class="menu">
 
-<li><a href="#">Home</a></li>
+<nav>
+
+<ul>
+
+<li><a href="#" class="active">Home</a></li>
 
 <li><a href="#">About Us</a></li>
 
@@ -306,52 +60,255 @@ width:470px;
 
 </ul>
 
-<a href="#" class="enquire">Enquire Now</a>
-
 </nav>
+
+
+<a href="#" class="enquire-btn">
+
+Enquire Now
+
+</a>
+
+</div>
+
+</header>
+
+
+
+
+
+<!-- ==========================
+HERO SECTION
+=========================== -->
 
 <section class="hero">
 
-<div class="left">
+<!-- Background Decorations -->
 
-<div class="small">
+<img src="images/left-leaf.png"
+class="left-leaf">
 
-EMPOWERING MINDS. INSPIRING FUTURES.
+<img src="images/right-leaf.png"
+class="right-leaf">
 
-</div>
+<img src="images/butterfly-small.png"
+class="bottom-butterfly">
 
-<h2>
+<div class="hero-container">
 
-Welcome to<br>
+<!-- LEFT -->
 
-<span>LOGICS'A</span>
-
-</h2>
+<div class="hero-left">
 
 <p class="subtitle">
 
-Your Trusted Partner for Learning & Professional Services
+EMPOWERING MINDS. INSPIRING FUTURES.
 
 </p>
 
+<div class="line"></div>
+
+<h2>
+
+Welcome to
+
+</h2>
+
+<h1>
+
+LOGICS'A
+
+</h1>
+
+<p class="description">
+
+Your Trusted Partner for Learning &
+Professional Services
+
+</p>
+
+
 <div class="buttons">
 
-<a href="#" class="green">🎓 Explore Courses</a>
+<a href="#" class="btn green">
 
-<a href="#" class="white">➕ Our Services</a>
+<i class="fa-solid fa-graduation-cap"></i>
+
+Explore Courses
+
+</a>
+
+
+<a href="#" class="btn white">
+
+<i class="fa-solid fa-circle-plus"></i>
+
+Our Services
+
+</a>
 
 </div>
 
 </div>
 
-<div class="right">
 
-<img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/butterfly-2028592_1280.png">
+
+
+
+<!-- RIGHT -->
+
+<div class="hero-right">
+
+<img src="images/butterfly.png"
+alt="Butterfly">
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- QUOTE BOX -->
+
+<div class="quote-box">
+
+<i class="fa-solid fa-quote-left"></i>
+
+<h3>
+
+We don't just teach,
+
+<br>
+
+we transform lives.
+
+</h3>
+
+<div class="heart">
+
+<i class="fa-regular fa-heart"></i>
+
+</div>
 
 </div>
 
 </section>
 
-</body>
 
+
+
+<!-- ==========================
+FEATURE BOXES
+=========================== -->
+
+<section class="features">
+
+<div class="feature">
+
+<div class="icon">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<h3>Expert Guidance</h3>
+
+<p>
+
+Learn from experienced professionals.
+
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="icon">
+
+<i class="fa-solid fa-book-open"></i>
+
+</div>
+
+<h3>Quality Education</h3>
+
+<p>
+
+Conceptual clarity with practical approach.
+
+</p>
+
+</div>
+
+
+
+
+<div class="feature">
+
+<div class="icon">
+
+<i class="fa-solid fa-clipboard-check"></i>
+
+</div>
+
+<h3>Exam Focused</h3>
+
+<p>
+
+Structured study material & regular tests.
+
+</p>
+
+</div>
+
+
+
+
+<div class="feature">
+
+<div class="icon">
+
+<i class="fa-solid fa-handshake"></i>
+
+</div>
+
+<h3>Career Support</h3>
+
+<p>
+
+Guidance for successful professional journey.
+
+</p>
+
+</div>
+
+
+
+
+<div class="feature">
+
+<div class="icon">
+
+<i class="fa-solid fa-star"></i>
+
+</div>
+
+<h3>Result Oriented</h3>
+
+<p>
+
+Our goal is your success.
+
+</p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
 </html>
