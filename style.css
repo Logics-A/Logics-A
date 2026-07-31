@@ -58,8 +58,17 @@ header .container{
     object-fit:contain;
 }
 
-.logo img{
-    width:65px;
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    display:block;
 }
 
 .logo h1{
