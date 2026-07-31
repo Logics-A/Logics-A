@@ -57,7 +57,6 @@ header .container{
     height:70px;
     object-fit:contain;
     display:block;
-    border:3px solid red;
 }
 .logo-container{
     display:flex;
