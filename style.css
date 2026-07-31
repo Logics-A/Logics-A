@@ -204,10 +204,11 @@ HERO
 
 .left-leaf{
     position:absolute;
-    left:-130px;     /* Move it outside the page */
-    top:170px;
-    width:320px;
-    z-index:1;
+    left:-90px;
+    top:150px;
+    width:220px;
+    opacity:0.9;
+    z-index:0;
 }
 
 .right-leaf{
