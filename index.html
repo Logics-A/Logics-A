@@ -1,103 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logics’A</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>LOGICS'A | Learn • Grow • Succeed</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Heading Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Body Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
+
     <header>
 
-        <div class="logo">
-            <img src="images/logo.png" alt="Logics’A">
-        </div>
+        <nav class="navbar">
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Courses</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <div class="logo">
+
+                <img src="assets/logo.png" alt="LOGICS'A Logo">
+
+                <div class="logo-text">
+
+                    <h2>LOGICS'A</h2>
+
+                    <p>Learn • Grow • Succeed</p>
+
+                </div>
+
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li><a href="#" class="active">Home</a></li>
+
+                <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Courses</a></li>
+
+                <li><a href="#">Services</a></li>
+
+                <li><a href="#">Why Us</a></li>
+
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+
+
+            <a href="#" class="enquire-btn">
+
+                Enquire Now
+
+            </a>
+
+
+            <div class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
         </nav>
 
     </header>
 
 
 
+    <!-- ================= HERO ================= -->
+
     <section class="hero">
 
-        <img src="images/left-leaf.png" class="left-leaf" alt="Leaf">
+        <!-- Decorative Images -->
 
-        <img src="images/right-leaf.png" class="right-leaf" alt="Leaf">
+        <img src="assets/leaves-left.png" class="leaf-left" alt="">
+        <img src="assets/leaves-right.png" class="leaf-right" alt="">
+        <img src="assets/butterfly.png" class="butterfly" alt="">
 
 
-        <div class="hero-content">
+        <div class="hero-container">
 
-            <h1>
-                Learn Beyond<br>
-                Just Passing Exams
-            </h1>
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+                <span class="hero-tagline">
+
+                    Empowering Minds. Inspiring Futures.
+
+                </span>
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <i class="fa-solid fa-clover"></i>
+
+                    <span></span>
+
+                </div>
+
+
+                <h1>
+
+                    Welcome to
+
+                    <span>LOGICS'A</span>
+
+                </h1>
+
+
+                <p>
+
+                    Your Trusted Partner for Learning &
+                    Professional Services
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#" class="primary-btn">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                        Explore Courses
+
+                    </a>
+
+
+                    <a href="#" class="secondary-btn">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        Our Services
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-image">
+
+                <img src="assets/butterfly.png" alt="Butterfly">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Quote Card -->
+
+        <div class="quote-card">
+
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+            <h3>
+
+                We don't just teach,
+
+                <br>
+
+                we transform lives.
+
+            </h3>
+
+            <div class="quote-divider">
+
+                <span></span>
+
+                <i class="fa-regular fa-heart"></i>
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <div class="feature-box">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+            <h3>Expert Guidance</h3>
 
             <p>
-                Professional education with practical knowledge,
-                guidance and confidence.
+
+                Learn from experienced professionals.
+
             </p>
 
-            <button>
-                Explore Courses
-            </button>
+        </div>
+
+
+
+        <div class="feature-box">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-book-open"></i>
+
+            </div>
+
+            <h3>Quality Education</h3>
+
+            <p>
+
+                Conceptual clarity with practical learning.
+
+            </p>
 
         </div>
 
 
-        <img src="images/butterfly-left.png" class="butterfly-left" alt="Butterfly">
 
-        <img src="images/butterfly-right.png" class="butterfly-right" alt="Butterfly">
+        <div class="feature-box">
 
+            <div class="icon">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+            </div>
+
+            <h3>Exam Focused</h3>
+
+            <p>
+
+                Structured material and regular test series.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-box">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-handshake"></i>
+
+            </div>
+
+            <h3>Career Support</h3>
+
+            <p>
+
+                Guidance for a successful professional journey.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-box">
+
+            <div class="icon">
+
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <h3>Result Oriented</h3>
+
+            <p>
+
+                Our goal is your success.
+
+            </p>
+
+        </div>
 
     </section>
 
 
 
-    <section class="cards">
-
-        <div class="card">
-            <h2>CA Coaching</h2>
-            <p>Concept based learning and exam preparation.</p>
-        </div>
-
-
-        <div class="card">
-            <h2>CMA Coaching</h2>
-            <p>Complete guidance with proper revision support.</p>
-        </div>
-
-
-        <div class="card">
-            <h2>Career Support</h2>
-            <p>Building skills beyond academics.</p>
-        </div>
-
-    </section>
-
-
-
-    <footer>
-
-        <p>
-            © Logics’A
-        </p>
-
-    </footer>
-
+    <script src="script.js"></script>
 
 </body>
-
 </html>
