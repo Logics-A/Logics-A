@@ -273,15 +273,17 @@ header {
 
 .hero-container {
 
-    max-width: 1250px;
+    max-width: 1200px;
 
-    margin: auto;
+    margin: 0 auto;
 
     display: flex;
 
     align-items: center;
 
     justify-content: space-between;
+
+    gap: 40px;
 
     position: relative;
 
@@ -295,10 +297,9 @@ header {
 
 .hero-content {
 
-    width: 55%;
+    width: 60%;
 
 }
-
 
 
 .hero-tagline {
@@ -956,5 +957,27 @@ header {
         margin-top: 20px;
 
     }
+
+}
+/* HERO IMAGE */
+
+.hero-image {
+
+    width: 35%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.hero-image img {
+
+    width: 280px;
+
+    animation: floatButterfly 5s ease-in-out infinite;
 
 }
